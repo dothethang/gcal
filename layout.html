@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Công Áp Lực</title>
+    <link rel="stylesheet" href="/libs/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/libs/css/style.css">
+    <link rel="stylesheet" href="/libs/fontawesome-free-6.5.2-web/css/all.css">
+    <script src="/libs/angular-1.8.2/angular.min.js"></script>
+    <script src="/libs/angular-1.8.2/angular-route.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand me-auto logo" href="#"><img src="/libs/images/logo.jpg" alt=""></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    style="background-color: #424242;" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel" style="color: white;"><img
+                                src="/libs/images/logo.jpg" alt=""></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="#">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">GIỚI THIỆU</a>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a class="nav-link mx-lg-2" id="dropdownMenuButton" data-mdb-toggle="dropdown"
+                                    aria-expanded="false" href="#">CÁC MÔN HỌC <i class="fa-solid fa-angle-down"
+                                        style="font-size: 13px;"></i></a>
+                                <ul class="dropdown-menu a" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#!home/m1s1">CÔNG NGHỆ TẠO DẬP HÌNH KHỐI</a></li>
+                                    <li><a class="dropdown-item" href="#!home/m1s2">CÔNG NGHỆ TẠO DẬP HÌNH TẤM</a></li>
+                                    <li><a class="dropdown-item" href="#!home/m1s3">CÔNG NGHỆ GIA CÔNG ÁP LỰC</a></li>
+                                    <li><a class="dropdown-item" href="#!home/m1s4">THIẾT KẾ KHUÔN MẪU</a></li>
+                                    <li><a class="dropdown-item" href="#!home/m1s5">MA SÁT TRONG GIA CÔNG ÁP LỰC</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#!home/m1s6">CÔNG NGHỆ CÁN KÉO</a></li>
+                                    <li><a class="dropdown-item" href="#!home/m1s7">HƯỚNG DẪN: ĐA THIẾT KẾ VÀ CHẾ TẠO
+                                            KHUÔN DẬP
+                                            HÌNH, ĐA GIA GIA CÔNG ÁP LỰC, ĐA TỐT NGHIỆP</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a class="nav-link mx-lg-2" id="dropdownMenuButton" data-mdb-toggle="dropdown"
+                                    aria-expanded="false" href="#">PHẦN MỀM CAD / CAM / CAE <i
+                                        class="fa-solid fa-angle-down" style="font-size: 13px;"></i></a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#!home/page_cal_tool">CÔNG CỤ TÍNH TOÁN SỐ LƯỢNG
+                                            LÒ XO</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-danger" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="banner"></div>
+    </div>
+
+    <div class="main container" ng-view>
+
+    </div>
+    <div class="footer"></div>
+    <script src="/routes/route.js"></script>
+    <script src="/libs/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
