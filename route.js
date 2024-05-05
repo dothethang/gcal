@@ -42,9 +42,9 @@ app.config(function ($routeProvider) {
                 templateUrl: "m1s7.html"
             })
         .when(
-            "/home/page_cal_tool",
+            "/home/page_ent",
             {
-                templateUrl: "page_cal_tool.html"
+                templateUrl: "page_ent.html"
             })
 
         .otherwise({
